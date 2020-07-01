@@ -4,7 +4,7 @@ RUN apt update && \
     env DEBIAN_FRONTEND=noninteractive apt install -y libffi-dev libssl1.0-dev build-essential nginx && \
     rm -rf /etc/nginx/sites-enabled/* /var/lib/apt/lists/*
 
-WORKDIR /usr/src/ooi3
+WORKDIR /usr/src/app
 COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt && \
