@@ -10,9 +10,6 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt && \
     cp -rf ./docker/docker-nginx.conf /etc/nginx/conf.d
 
-ENV OOI_SECRET_KEY BQ!CR3bhE!8%7KVQP6R#R#$f2YugxDVx
-ENV OOI_SCHEME http
-
 EXPOSE 80
 
 CMD [ "bash", "-c", "nginx && python ./ooi.py --host 0.0.0.0 --port 9999" ]
