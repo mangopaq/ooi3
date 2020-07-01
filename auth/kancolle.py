@@ -21,8 +21,8 @@ class KancolleAuth:
             'game': 'http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/',
             'make_request': 'http://osapi.dmm.com/gadgets/makeRequest',
             'get_world': 'http://203.104.209.7/kcsapi/api_world/get_id/%s/1/%d',
-            'get_entry': 'http://%s/kcsapi/api_auth_member/dmmlogin/%s/1/%d',
-            'entry': 'http://%s/kcs2/index.php?api_root=/kcsapi&voice_root=/kcs/sound&osapi_root=osapi.dmm.com&version=4.0.0.0&api_token=%s&api_starttime=%d'}
+            'get_flash': 'http://%s/kcsapi/api_auth_member/dmmlogin/%s/1/%d',
+            'flash': 'http://%s/kcs/mainD2.swf?api_token=%s&amp;api_starttime=%d'}
 
     # 各镇守府的IP列表
     world_ip_list = (
@@ -33,7 +33,7 @@ class KancolleAuth:
         "203.104.209.150",
         "203.104.209.134",
         "203.104.209.167",
-        "203.104.248.135",
+        "203.104.209.199",
         "125.6.189.7",
         "125.6.189.39",
         "125.6.189.71",
@@ -47,6 +47,7 @@ class KancolleAuth:
         "203.104.209.55",
         "203.104.209.102",
     )
+
 
     # 伪装成Win7 x64上的IE11
     user_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
