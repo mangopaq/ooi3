@@ -40,3 +40,16 @@ html, body, h1, h2, h3, h4, h5, h6 {
 .statistics {
   visibility: hidden;
 }
+
+#bg {
+position:fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+overflow:hidden;
+background:url(https://miao.su/images/2020/02/26/60453453_p07cf3d249a7.png) no-repeat;
+background-size:cover;
+opacity:0.15;
+z-index:-1;
+}
