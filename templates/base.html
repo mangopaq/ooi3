@@ -4,20 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="舰队collection,舰娘,艦隊これくしょん,艦これ">
+  <meta name="keywords" content="舰队collection,舰娘,艦隊これくしょん,艦これ,OOI,ooi,舰娘在线缓存系统">
   <title>OOI - 舰娘在线缓存系统</title>
   <link href="/static/css/uikit.min.css" rel="stylesheet">
   <link href="/static/css/uikit.almost-flat.min.css" rel="stylesheet">
   <link href="/static/css/ooi.css" rel="stylesheet">
   <script src="/static/js/jquery-2.1.4.min.js"></script>
   <script src="/static/js/uikit.min.js"></script>
+  <script>
+    $(function() {
+        window.postMessage = (m) => window.postMessage(m)
+    });
+</script>
+<style>
+.redBolder{
+color: red;
+font-weight: bolder;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74032296-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74032296-1');
+</script>
 </head>
 <body>
 <div id="ooi-page" class="uk-container uk-container-center">
   <div id="ooi-header" class="uk-grid uk-grid-small">
     <div id="ooi-logo" class="uk-width-small-1-10">
       <img src="/static/img/logo.png">
-    </div>
+    </div><div id="bg"></div>
     <div id="ooi-headline" class="uk-width-small-9-10">
       <h1 class="uk-text-primary">OOI - 舰娘在线缓存系统</h1>
       <hr>
@@ -26,12 +46,124 @@
   <div id="ooi-content" class="uk-grid">
     {% block content %}{% endblock %}
   </div>
-  <div id="ooi-footer" class="uk-text-center">
+    <div id="ooi-footer" class="uk-text-center"> 
     <hr>
-    <address><a href="http://kancolle.tv" target="_blank">海平线镇守府</a> &copy; 2014-2016</address>
-  </div>
+
+<br>
+<iframe width="100%" height="200" class="share_self"  frameborder="0" scrolling="no" src="https://widget.weibo.com/weiboshow/index.php?language=&width=0&height=200&fansRow=2&ptype=0&speed=0&skin=4&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=6089067483&verifier=b001f32b&dpc=1"></iframe>
+<!--<iframe width="100%" height="300" frameborder="0" scrolling="no" src="https://chat.ooi.moe"></iframe>-->
+    </div>
 </div>
 <div class="statistics">
+    
 </div>
+
+<div id="zh" class="uk-modal">
+    <div class="uk-modal-dialog uk-modal-dialog-large">
+        <a class="uk-modal-close uk-close"></a>
+        <h1>舰娘账号交易平台</h1>
+        <strong>【自动发货】舰队collection账号舰娘账号 可改邮箱和密码</strong>
+<p>　<br />
+全新未取名纯手工打造舰娘账号 可以选区（需要选区的先加QQ询问是否有货）<br />
+下单付款后会自动发账号@密码和教程给您的.无需担心不会登录.不会用的问题<br />
+　<br />
+直接购买地址：<a href="https://item.taobao.com/item.htm?spm=686.1000925.0.0.19025640W3pPLI&id=561546216910&qq-pf-to=pcqq.c2c" style="color:#ff0000" target="_blank">【点击进入购买】</a><br />
+购买网址：http://item.taobao.com/item.htm?id=561546216910<br />
+　<br />
+支持 <a style="color:#ff0000">淘宝 支付宝 微信红包 QQ红包 手机充值卡 财付通</a> 等交易方式<br />
+　<br />
+如果没有收到账号密码或者忘记账号密码,买家可自行订单查询 <a href="https://alds.agiso.com/tiqu.aspx?fMjyea&r=0.0652831881611064" style="color:#ff0000" target="_blank">【点击进入查询】</a><br />
+　<br />
+需要淘宝网购买的亲.有疑问可以联系旺旺<a target="_blank" href="http://www.taobao.com/webww/ww.php?ver=3&touid=tbbzm2015&siteid=cntaobao&status=1&charset=utf-8"><img border="0" src="https://amos.alicdn.com/realonline.aw?v=2&uid=tbbzm2015&site=cntaobao&s=1&charset=utf-8" alt="点击这里给我发消息" /></a><br />
+微信支付 QQ红包支付 请先联系店主QQ:281185707 <a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin=281185707&site=qq&menu=yes"><img border="0" src="https://miao.su/images/2019/06/03/button_1117a7ed.jpg" alt="点这里给我发消息" /></a><br />
+　<br />
+舰娘萌新交流/售后QQ群: <a style="color:#ff0000">390063349</a><br />
+　<br />
+另外还提供帮忙激活账号服务！详细请联系店主！<br />
+本店出售的任何账号都可以修改邮箱和密码.让您买得安心.用的放心.<br />
+　<br />
+需要购买舰娘优秀带船开局号：<a href="http://jcyeyou.com/kaijuhao.html" style="color:#ff0000" target="_blank">【点我查看】</a><br />
+　<br />
+需要购买舰娘成品大建号的亲：<a href="http://www.jcyeyou.com/dajian.html" style="color:#ff0000" target="_blank">【点我查看】</a><br />
+　<br />
+需要出售手上的舰娘号可以联系QQ: 281185707 <a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin=281185707&site=qq&menu=yes"><img border="0" src="https://miao.su/images/2019/06/03/button_1117a7ed.jpg" alt="点这里给我发消息" /></a></p>
+    </div>
+</div>
+<div id="dk" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-large">
+        <button type="button" class="uk-modal-close uk-close"></button>
+        <h1>舰队collection官方充值卡</h1>
+
+        <p><a href="https://shop117133320.taobao.com" target="_blank">点卡店铺链接</a> | <a
+                href="https://shop117802716.taobao.com" target="_blank">代购、手办店链接</a> | <a
+                href="http://weibo.com/3196429454" target="_blank">店主微博，欢迎勾搭~</a></p>
+        <p>
+            本店可以提供实体卡密照片，以及小票照片。有需要的直接在店主旺旺留言即可。(一定记得是在旺旺留言，在下订单时候的留言会被发货机忽略掉，店主是看不到的)最近出现的有时买东西扣掉点数东西没买到问题请注意：买东西时保持网络顺畅，从官网登陆直接购买，不要使用KCV或登录来买东西.</p>
+           <p>如在本店买卡出现这种情况 店主免费补全被吞面额，外带不确定网络状况，或网络不稳定店主可以代买。店主提供日本代购、跑腿服务（总之是万事屋啦~） ，有需要请单独联系店主
+            太难找的和预定的店主一般没办法拿到</p>
+            <p>本店所售卡密为DMM官方卡密 ，区服账号这类随意填写，发您的是充值卡卡密 并附一份教程 遇到问题来问店主就好，如果出现卡密错误之类的情况 也请联系店主（多半是店主输入的时候打错了orz..）</p>
+            <p>因为封杀原因，商品中无法出现DMM，舰娘等字样还请见谅。</p>
+            <p>您若没在2分钟内收到货物，说明可能发货机没货了，一般这时候店主是在睡觉，您可以选择退款或者等待一阵，店主上线后会为您发货以及做出补偿。（理解一下吧~店主晚上睡不着觉...）</p>
+            <p>此卡可以充值舰队collection、所有DMM的页游、以及R18，只要是在DMM的消费均可使用。</p>
+            <p>为了小店的资金周转，还请充值无误后及时确认哦~</p>
+            <p>欢迎加入店主的售后qq群 699935714 不定期举办抽奖和促销活动~</p>
+            <p>卡密为自动发货，请保证自己买之前在旺旺设置中打开“接受陌生人消息”选项。</p>
+            <p>以下将依次描述 充值方式 以及 声明</p>
+            <p>充值方式:</p>
+            <p>分为1000点和其他面值 请看这个链接：http://weibo.com/p/1001603976116330195899</p>
+            <p>在4月7日维护完毕后，充值完成不用再执行兑换操作，此DMM点数全网通用</p>
+            <p>声明：</p>
+            <p>在购买时区服可以随意填写，</p>
+            <p>账号建议您按实际填写(并不是必须,亦不需要密码），填写账号是为了发生纠纷时店主上号查验之用途。</p>
+            <p>店主有时会遇到停电、地震、海啸、大灾变（快够）等影响导致店铺宕机。当店主旺旺是灰色时一般无法发货（情况很少）</p>
+            <img src="//miao.su/images/2016/03/02/56d4086d0259654fb7.jpg">
+        </p>
+    </div>
+</div>
+
+<div id="about" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-large">
+        <button type="button" class="uk-modal-close uk-close"></button>
+        <h1>关于本系统</h1>
+        <p>本站采用了OOI系统，OOI (Online Objects Integration)是针对DMM网页游戏《艦隊これくしょん -艦これ-》的在线缓存系统。</p>
+        <p>本站只支持DMM账号登录，不支持Facebook和Google账号登录。本网站不会保存任何用户信息，并对本网站服务可能造成的任何后果不负责任。</p>
+        <p>本站的源代码已更新到OOI3，该项目代码采用AGPLv3许可证开源，发布于 <a href="https://github.com/acgx/ooi3" target="_blank">此版本库</a>。</p>
+        <p>OOI用户QQ群：<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5aSEFz8"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="舰队收藏OOI MC交流群" title="舰队收藏OOI MC交流群"></a> | <a href="https://github.com/acgx/ooi3/issues" target="_blank">汇报bug</a></p>
+
+    </div>
+</div>
+
+<div id="status" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-large">
+        <button type="button" class="uk-modal-close uk-close"></button>
+        <p>服务器状态<p/>
+<iframe src="https://mp.weixin.qq.com/s?__biz=MjM5NzIyMDM2MA==&mid=2649660464&idx=1&sn=99ed67c344b6b3721145dc50c30b5165&chksm=bec7655789b0ec4164c4fe462a8a70d49a1b259ad3b349e8a4c2eae0a480f380a77f114f0429&mpshare=1&scene=1&srcid=&sharer_sharetime=1584954856645&sharer_shareid=97a80cc54fe9aea8732b7a3a46728e12&key=ef447128290e1305f986964698352721cb8cc9d3ea794be57320a344ed13a78ed209e4bcc4b0cb386a63c32f26bf0725c19a399faabb760fb995e5838064132c08bb1225c7d5d9d3ed769888eb47ed10&ascene=1&uin=NTI2MTQ1NQ%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A2uGm%2BoofdbciQrIvRTca14%3D&pass_ticket=RIWxUtsZymbH5PH3ylPKLPCnAmetH2GyZ%2BzCXRpswqY%3D" width="100%" height="800"></iframe>
+        	
+    </div>
+</div>
+
+<!--<div id="twitte" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-large">
+        <button type="button" class="uk-modal-close uk-close"></button>
+        <iframe src="https://t.kcwiki.moe/index.php" width="100%" height="800"></iframe>
+        	
+    </div>
+</div>-->
+
+<div id="alipay" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-large">
+        <button type="button" class="uk-modal-close uk-close"></button>
+	<img src="https://miao.su/images/2018/12/26/payment118f2.png" alt="payment118f2.png" border="0">
+	<img src="https://miao.su/images/2018/12/26/donatedbb20.png" alt="donate3e35d.png" border="0">
+    </div>
+</div>
+<div id="qq" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-large">
+        <button type="button" class="uk-modal-close uk-close"></button>
+        <img src="https://miao.su/images/2018/01/08/OOI6c9fa.png" alt="OOI6c9fa.png" border="0">
+
+    </div>
+</div>
+
 </body>
 </html>
