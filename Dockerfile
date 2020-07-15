@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt && \
-    cp -rf ./docker/docker-nginx.conf /etc/nginx/conf.d
+    cp -rf ./.docker/docker-nginx.conf /etc/nginx/conf.d
     
 ENV OOI_SECRET_KEY DR5fmbkotYMINJPjhv0r7hviUrNBKQKe
 ENV OOI_SCHEME http
