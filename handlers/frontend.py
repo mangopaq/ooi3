@@ -58,7 +58,7 @@ class FrontEndHandler:
             kancolle = KancolleAuth(login_id, password)
             if mode in (1, 2, 3):
                 try:
-                    yield from kancolle.get_entry()
+                    yield from kancolle.get_flash()
                     session['api_token'] = kancolle.api_token
                     session['api_starttime'] = kancolle.api_starttime
                     session['world_ip'] = kancolle.world_ip
@@ -99,7 +99,7 @@ class FrontEndHandler:
         starttime = session.get('api_starttime', None)
         world_ip = session.get('world_ip', None)
         if token and starttime and world_ip:
-            context = {'scheme': request.scheme,
+            context = {
                        'host': request.host,
                        'token': token,
                        'starttime': starttime}
