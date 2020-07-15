@@ -48,7 +48,6 @@ class KancolleAuth:
         "203.104.209.102",
     )
 
-
     # 伪装成Win7 x64上的IE11
     user_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
 
@@ -91,7 +90,7 @@ class KancolleAuth:
         self.world_ip = None
         self.api_token = None
         self.api_starttime = None
-        self.entry = None
+        self.flash = None
 
     def __del__(self):
         """析构函数，用于关闭aiohttp的会话。
@@ -229,7 +228,7 @@ class KancolleAuth:
 
         :return: tuple
         """
-        url = self.urls['get_entry'] % (self.world_ip, self.owner, int(time.time()*1000))
+        url = self.urls['get_flash'] % (self.world_ip, self.owner, int(time.time()*1000))
         data = {'url': url,
                 'httpMethod': 'GET',
                 'authz': 'signed',
@@ -252,9 +251,9 @@ class KancolleAuth:
             raise OOIAuthException('调查提督进入镇守府的口令时发生错误')
         self.api_token = svdata['api_token']
         self.api_starttime = svdata['api_starttime']
-        self.entry = self.urls['entry'] % (self.world_ip, self.api_token, self.api_starttime)
+        self.flash = self.urls['flash'] % (self.world_ip, self.api_token, self.api_starttime)
 
-        return self.api_token, self.api_starttime, self.entry
+        return self.api_token, self.api_starttime, self.flash
 
     @asyncio.coroutine
     def get_osapi(self):
@@ -268,7 +267,7 @@ class KancolleAuth:
         return self.osapi_url
 
     @asyncio.coroutine
-    def get_entry(self):
+    def get_flash(self):
         """登录游戏，获取游戏FLASH地址并返回
 
         :return: str
@@ -276,4 +275,4 @@ class KancolleAuth:
         yield from self.get_osapi()
         yield from self._get_world()
         yield from self._get_api_token()
-        return self.entry
+        return self.flash
